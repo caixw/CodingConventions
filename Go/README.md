@@ -1,6 +1,6 @@
 Go编码约定
 =========
-自己编码过程中形成的一些Go语言编码约定。v0.1.3.150308
+自己编码过程中形成的一些Go语言编码约定。v0.1.3.150331
 
 ### 版本号
 每个包提供一个Version的常量，用于表示当前包的版本号，格式为：major.minor.patch.date。
@@ -27,9 +27,9 @@ import(
 - 保持error的简洁，尽量能用fmt.Errorf或是errors.New创建，而不是处处都自定义error实现；
 - error提示信息中，应该以所在的函数开头，方便定位错误：
 ```go
-    func triger () error {
-        return errors.New("triger:出错了")
-    }
+func triger () error {
+    return errors.New("triger:出错了")
+}
 ```
 
 
